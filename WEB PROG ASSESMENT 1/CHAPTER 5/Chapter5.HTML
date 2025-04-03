@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video loop</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- This video player will show our meme video with play controls and loop forever -->
+    <video controls loop poster="CHAP5-IMG/memevideo.mp4">
+        <!-- The video file is loaded from CHAP5-IMG folder and is in MP4 format -->
+        <source src="CHAP5-IMG/memevideo.mp4" type="video/mp4">
+    </video>
+</body>
+</html>

@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial';
+    line-height: 1.6;
+    color: black;
+    background-color: black;
+}
+
+.header {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 32px;
+}
+
+.header h1 {
+    margin-bottom: 8px;
+}
+
+.nav-menu {
+    background-color: darkblue;
+    padding: 16px 0;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: rgb(27, 27, 186);
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 32px auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+}
+
+.column {
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.column h2 {
+    color: black;
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid lightgray;
+}
+
+.topic-item {
+    margin-bottom: 24px;
+    padding: 16px;
+    background-color: lightgray;
+    border-radius: 4px;
+}
+
+.topic-item h3 {
+    color: blue;
+    margin-bottom: 8px;
+}
+
+.topic-item p {
+    margin-bottom: 16px;
+}
+
+.btn-primary {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: darkred;
+}
+
+.progress-bar {
+    background-color: lightgray;
+    border-radius: 4px;
+    margin: 16px 0;
+}
+
+.progress-fill {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+.resource-item {
+    margin-bottom: 24px;
+}
+
+.resource-item ul {
+    list-style-position: inside;
+    margin-top: 8px;
+}
+
+.resource-item li {
+    margin-bottom: 8px;
+}
+
+.footer {
+    background-color: darkblue;
+    color: black;
+    text-align: center;
+    padding: 32px;
+    margin-top: 32px;
+}
+
+.footer-nav {
+    margin-top: 16px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 16px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+} 

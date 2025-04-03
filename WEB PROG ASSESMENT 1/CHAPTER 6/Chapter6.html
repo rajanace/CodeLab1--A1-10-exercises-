@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrol Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- This is the main box that holds our calculator. It's like a container that keeps everything organized -->
+    <div class="calculator-container">
+        <!-- The top part of our calculator with the title. It's styled to stand out with a black background -->
+        <header class="header">
+            <h1>Petrol Calculator</h1>
+        </header>
+
+        <!-- This is where all the main stuff happens - the inputs, button, and result -->
+        <div class="content">
+            <!-- First input box for the cost of petrol per liter. The value="1.72" means it starts with $1.72 -->
+            <div class="input-group">
+                <label for="petrolCost">Cost per Liter ($)</label>
+                <input type="number" id="petrolCost" value="1.72" step="0.01" min="0" placeholder="Enter cost per liter">
+            </div>
+
+            <!-- Second input box for how many liters you want to buy. It starts at 0 -->
+            <div class="input-group">
+                <label for="liters">Number of Liters</label>
+                <input type="number" id="liters" value="0" min="0" placeholder="Enter number of liters">
+            </div>
+
+            <!-- The big button that starts the calculation when you click it -->
+            <button onclick="calculateTotal()">Calculate Total</button>
+
+            <!-- This box shows the final result. It's styled to be really noticeable -->
+            <div class="result-container">
+                <div class="result-label">Total Amount</div>
+                <p id="result">$0.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- This line connects our JavaScript file that does all the math -->
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,156 @@
+/* Modern black theme */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background: rgb(103, 100, 100);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.calculator-container {
+    background: #333131;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    border: 1px solid #333333;
+}
+
+/* Header styling */
+.header {
+    background: black;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #333333;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Main content */
+.content {
+    padding: 40px;
+}
+
+/* Form styling */
+.input-group {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #cccccc;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    background: #d78214;
+    border: 2px solid #333333;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ffffff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Button styling */
+button {
+    background: #ffffff;
+    color: #000000;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #cccccc;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Result display */
+.result-container {
+    margin-top: 40px;
+    padding: 30px;
+    background: #000000;
+    border-radius: 10px;
+    border: 2px solid #333333;
+    text-align: center;
+}
+
+.result-label {
+    font-size: 16px;
+    color: #cccccc;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#result {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Input number arrows styling */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .content {
+        padding: 25px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    #result {
+        font-size: 36px;
+    }
+}
+
+/* Custom placeholder color */
+::placeholder {
+    color: #666666;
+} 

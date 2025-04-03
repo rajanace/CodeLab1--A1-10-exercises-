@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.image-container {
+    margin-bottom: 50px;
+    border-radius: 0px; 
+    padding: 20px; 
+    width: 22;
+    background-color: lightgray;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    filter: sepia(20%) brightness(90%);
+}
+
+h1 {
+    border-radius: 0px; 
+    padding: 20px; 
+    margin: 20px auto;
+    width: 100%;
+    background-color: lightskyblue;
+    color: black;
+} 
